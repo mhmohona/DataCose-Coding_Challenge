@@ -46,3 +46,7 @@ The .env file contains the following environment variables:
 * API_KEY: API key for fetching data from /people/ endpoint
 * API_USERNAME: API basic auth username for posting data to /contacts/ endpoint
 * API_PASSWORD: API basic auth password for posting data to /contacts/ endpoint
+
+## Arther
+[Mahfuza Humayra Mohona](https://www.linkedin.com/in/mhmohona/)
+email - mhmohona@gmail.com
