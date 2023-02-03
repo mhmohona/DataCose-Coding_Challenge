@@ -26,12 +26,21 @@ The data fetched from the API endpoint /people/ is cleaned in the following ways
 * Lifetime value is transformed from "$xx.xx" to float
 
 ## Test
+ To run the tests, navigate to the project directory and run the following command:
+` pytest test.py` 
 The project includes test cases for checking the functionality of the automation tool. The tests include:
 
-* Test for successful GET request to the API endpoint /people/
-* Test for successful POST request to the API endpoint /contacts/
-* To run the tests, navigate to the project directory and run the following command:
-` pytest test.py` 
+1. test_people_endpoint_success: This test verifies that the "People" endpoint is working correctly by checking that it returns data with the expected fields, i.e. firstName, lastName, dateOfBirth, and email.
+
+2. test_create_contacts: This test verifies that the "Contacts" endpoint is working correctly by creating "Contact" objects from the "People" data and POSTing it to the API. It verifies that the API returns a 200 status code, which indicates success.
+
+3. test_failed_authentication: This test verifies that the API's authentication mechanism is working correctly by passing incorrect credentials. It verifies that the API returns a 401 status code, which indicates an authentication error.
+
+4. test_missing_required_field: This test verifies that the API is correctly handling a missing required field by sending a "Contact" object missing the birthdate field. It verifies that the API returns a 400 status code, which indicates a client error.
+
+5. test_invalid_email_address: This test verifies that the API is correctly handling an invalid email address by sending a "Contact" object with an invalid email. It verifies that the API returns a 400 status code, which indicates a client error.
+
+6. test_non_numeric_lifetime_value: This test verifies that the API is correctly handling a non-numeric value for a custom property. It verifies that the API returns a 400 status code, which indicates a client error.
 
 ## Dependencies
 The project uses the following dependencies:
