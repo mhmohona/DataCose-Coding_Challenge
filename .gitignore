@@ -1,0 +1,25 @@
+# .gitignore
+
+# Environment variables
+.env
+
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Log files and databases
+*.log
+*.sqlite3
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Distribution files
+dist/
+build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
