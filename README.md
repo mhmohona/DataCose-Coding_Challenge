@@ -1,8 +1,5 @@
 # Automation-Engineer-Candidate-Challenge
 
-## Arther
-[Mahfuza Humayra Mohona](https://www.linkedin.com/in/mhmohona/)\
-email - mhmohona@gmail.com
 
 ## Introduction
 This project is an automation tool that fetches the data from the API endpoint /people/, cleans and transforms the data to match the "Contact" object schema, and then posts each "Contact" object to the API endpoint /contacts/. The project includes the following components:
