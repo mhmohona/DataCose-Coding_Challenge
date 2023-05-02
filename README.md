@@ -45,9 +45,11 @@ The project uses the following dependencies:
 * dotenv
 
 ## Requirements
+
 * Python 3.x
 
 ## Environment Variables
+
 The .env file contains the following environment variables:
 
 * API_URL: API endpoint URL
