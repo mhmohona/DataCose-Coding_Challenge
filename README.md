@@ -2,6 +2,7 @@
 
 
 ## Introduction
+
 This project is an automation tool that fetches the data from the API endpoint /people/, cleans and transforms the data to match the "Contact" object schema, and then posts each "Contact" object to the API endpoint /contacts/. The project includes the following components:
 
 * .env file containing environment variables
@@ -11,11 +12,13 @@ This project is an automation tool that fetches the data from the API endpoint /
 * code for testing the project functionality
 
 ## Usage
+
 Run the automation tool
 `python main.py`
 
 
 ## Data Cleaning
+
 The data fetched from the API endpoint /people/ is cleaned in the following ways:
 
 * Leading and trailing spaces are removed from first and last names
@@ -23,6 +26,7 @@ The data fetched from the API endpoint /people/ is cleaned in the following ways
 * Lifetime value is transformed from "$xx.xx" to float
 
 ## Test
+
  To run the tests, navigate to the project directory and run the following command:
 ` pytest test.py` 
 The project includes test cases for checking the functionality of the automation tool. The tests include:
